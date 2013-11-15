@@ -1,4 +1,17 @@
 {
+    "name": "sagephp/system",
+    "type": "library",
+    "description": "class to abstract interaction with *nix systems",
+    "keywords": ["sytem", "linux", "service"],
+    "homepage": "https://github.com/SagePHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuno Costa",
+            "email": "nuno@francodacosta.com",
+            "homepage": "http://www.francodacosta.com"
+        }
+    ],
     "require": {
         "symfony/process" : "dev-master",
         "symfony/console" : "dev-master"
