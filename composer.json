@@ -1,0 +1,11 @@
+{
+    "require": {
+        "symfony/process" : "dev-master",
+        "symfony/console" : "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "SagePHP": "src/"
+        }
+    }
+}

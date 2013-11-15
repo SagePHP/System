@@ -1,0 +1,106 @@
+[
+    {
+        "name": "symfony/process",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Process",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Process.git",
+            "reference": "88ccdd7a1fb67a23fe81355c66a09d6908ebcd80"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Process/zipball/88ccdd7a1fb67a23fe81355c66a09d6908ebcd80",
+            "reference": "88ccdd7a1fb67a23fe81355c66a09d6908ebcd80",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2013-11-09 12:03:12",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Process\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/console",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Console",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console.git",
+            "reference": "846e8fa8fdb5fab85cdb053b26687dd073c33051"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Console/zipball/846e8fa8fdb5fab85cdb053b26687dd073c33051",
+            "reference": "846e8fa8fdb5fab85cdb053b26687dd073c33051",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "symfony/event-dispatcher": "~2.1"
+        },
+        "suggest": {
+            "symfony/event-dispatcher": ""
+        },
+        "time": "2013-11-13 21:30:16",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "http://symfony.com"
+    }
+]
