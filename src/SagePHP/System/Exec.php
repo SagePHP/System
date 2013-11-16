@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace SagePHP\System;
 
@@ -17,7 +17,7 @@ class Exec
      * the command to execute
      * @var string
      */
-    private $command;
+    private $command = '';
 
     /**
      * Helper class to execute commands
@@ -27,26 +27,38 @@ class Exec
 
     /**
      * executes a system command
-     * 
+     *
      * @param string $command
      */
     public function __construct($command = null)
     {
+
         $this->setCommand($command);
     }
 
     /**
      * gets the helper class to execute a command.
-     * 
+     *
      * @return Process
      */
     private function getProcessExecutor()
     {
+
         if (null === $this->process) {
             $this->process = new Process('');
         }
 
         return $this->process;
+    }
+
+    /**
+     * sets the helper class to execute a command.
+     *
+     * @param Process $process Process
+     */
+    public function setProcessExecutor(Process $process)
+    {
+        $this->process = $process;
     }
 
     /**
@@ -56,6 +68,9 @@ class Exec
      */
     public function getCommand()
     {
+        if (null === $this->command) {
+            $command = new Command;
+        }
         return $this->command;
     }
 
@@ -77,7 +92,7 @@ class Exec
 
     /**
      * executes the command.
-     * 
+     *
      * @return integer the return code of the executed command
      */
     public function run()
@@ -102,7 +117,7 @@ class Exec
 
     /**
      * gets the command output
-     * 
+     *
      * @return array
      */
     public function getOutput()
@@ -129,7 +144,7 @@ class Exec
                 $typeStr = "";
                 break;
         }
-        
+
         echo sprintf("\n%s %s\n", $typeStr, $messageText);
     }
 
