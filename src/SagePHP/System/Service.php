@@ -1,7 +1,11 @@
 <?php
 
 namespace SagePHP\System;
-
+/**
+ * helper class handle services (system daemons)
+ *
+ * @author Nuno Costa <nuno@francodacosta.com>
+ */
 class Service
 {
     private $initPath;
